@@ -13,7 +13,7 @@ public class HomePageObjs2 extends Base {
 	By searchBox = By.xpath("//a[@class='_searchInput search-link']");
 	By searchTerm = By.xpath("//input[@id='search-term']");
 	By serchTrm2 = By.xpath("//input[@id='search-term']");
-	By clickOnProduct = By.id("product-47390015");
+	By clickOnProduct = By.xpath("//li[@data-title='STRETCH SHEEN SUIT JACKET']");
 	By selectSizeBy = By.xpath("//*[@class='size-name-container'] //*[@title=34]");
 	By addToCard = By.xpath("//button[@aria-label='Add']");
 	By completeOrder = By.xpath("//a[@class='button button-primaryB button-big buy-button process-order-btn _nav-to-cart-btn']");

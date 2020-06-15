@@ -9,7 +9,7 @@ import java.util.Properties;
 import org.testng.annotations.Test;
 
 import library.HomePageFactory;
-import library.HomePageObjs;
+import library.HomePageObjs4;
 import utilities.Base;
 
 public class SearchTest extends Base{
@@ -24,7 +24,7 @@ public class SearchTest extends Base{
 		
 		driver.get(prop.getProperty("url")); //1
 
-		HomePageObjs homePageObjs = new HomePageObjs(driver); //10
+		HomePageObjs4 homePageObjs = new HomePageObjs4(driver); //10
 		homePageObjs.insertSearchStr("shirt");
 		//search box insert "blouse"
 		//driver.findElement().sendKeys("blouse"); //2
