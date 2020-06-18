@@ -1,17 +1,19 @@
 package library;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-import utilities.Base;
 
-public class HomePageObjs2 extends Base {
+
+public class HomePageObjs2  {
 	
 	
 	WebDriver driver;
 	By searchBox = By.xpath("//a[@class='_searchInput search-link']");
 	By searchTerm = By.xpath("//input[@id='search-term']");
+	By clickClick = By.xpath("//a[@data-filter='{!tag=rootFilter}rootCategories_filter_24056_11719:\"MAN\"']");
 	By serchTrm2 = By.xpath("//input[@id='search-term']");
 	By clickOnProduct = By.xpath("//li[@data-title='STRETCH SHEEN SUIT JACKET']");
 	By selectSizeBy = By.xpath("//*[@class='size-name-container'] //*[@title=34]");
@@ -20,6 +22,7 @@ public class HomePageObjs2 extends Base {
 	By completeThePurchase = By.xpath("//button[@class='button layout-shop-footer__body-button layout-shop-footer__body-button--expanded']/*[@class='layout-shop-footer-continue-button layout-shop-footer-continue-button-enter-done layout-shop-footer-continue-button-exit-done']");
 	By enterlLogIn = By.name("email");
 	By enterPass = By.name("password");
+	
 	
 	
 	public HomePageObjs2(WebDriver driver) {
@@ -32,6 +35,10 @@ public class HomePageObjs2 extends Base {
 
 	public void clicksearchTerm() {
 		driver.findElement(searchTerm).sendKeys("suit");
+	}
+
+	public void clickClick() {
+		driver.findElement(clickClick).click();
 	}
 	public void clickserchTrm() {
 		driver.findElement(serchTrm2).sendKeys(Keys.RETURN);

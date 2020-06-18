@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 07 17:39:03 EDT 2020</td>
+<td>Started on:</td><td>Thu Jun 18 03:23:24 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25141 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26891 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,54 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test2.TestB.testB1()'><b>testB1</b><br>Test class: test2.TestB</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;travellerButton&apos;]&quot;}
-  (Session info: chrome=83.0.4103.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-B73T7O77&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 21b92d63613181886f46968e7bb4e573
-*** Element info: {Using=xpath, value=//a[@id=&apos;travellerButton&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at test2.TestB.testB1(TestB.java:15)
+<td title='class24.AssertionTest.testSoftAssert()'><b>testSoftAssert</b><br>Test class: class24.AssertionTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Message for indication method = testSoftAssert() expected [Hello] but found [hell],
+	5&gt;3 example expected [false] but found [true]
+	at class24.AssertionTest.testSoftAssert(AssertionTest.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265824587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace265824587'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;travellerButton&apos;]&quot;}
-  (Session info: chrome=83.0.4103.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-B73T7O77&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 21b92d63613181886f46968e7bb4e573
-*** Element info: {Using=xpath, value=//a[@id=&apos;travellerButton&apos;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at test2.TestB.testB1(TestB.java:15)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652149987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1652149987'><pre>java.lang.AssertionError: The following asserts failed:
+	Message for indication method = testSoftAssert() expected [Hello] but found [hell],
+	5&gt;3 example expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at class24.AssertionTest.testSoftAssert(AssertionTest.java:43)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,8 +127,8 @@ Session ID: 21b92d63613181886f46968e7bb4e573
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></div></td>
-<td>1</td>
-<td>test2.TestB@2db7a79b</td></tr>
+<td>0</td>
+<td>class24.AssertionTest@289d1c02</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -176,12 +141,32 @@ Session ID: 21b92d63613181886f46968e7bb4e573
 <td title='test2.TestA.selectGoods()'><b>selectGoods</b><br>Test class: test2.TestA</td>
 <td></td>
 <td>8</td>
-<td>test2.TestA@4671e53b</td></tr>
+<td>test2.TestA@17d0685f</td></tr>
 <tr>
 <td title='test.WikipediaTest.selectTest()'><b>selectTest</b><br>Test class: test.WikipediaTest</td>
 <td></td>
 <td>5</td>
-<td>test.WikipediaTest@37374a5e</td></tr>
+<td>test.WikipediaTest@22eeefeb</td></tr>
+<tr>
+<td title='test2.TestB.testB1()'><b>testB1</b><br>Test class: test2.TestB</td>
+<td></td>
+<td>2</td>
+<td>test2.TestB@3891771e</td></tr>
+<tr>
+<td title='test2.TestC.testC()'><b>testC</b><br>Test class: test2.TestC</td>
+<td></td>
+<td>0</td>
+<td>test2.TestC@78ac1102</td></tr>
+<tr>
+<td title='test2.TestC.testC2()'><b>testC2</b><br>Test class: test2.TestC</td>
+<td></td>
+<td>0</td>
+<td>test2.TestC@78ac1102</td></tr>
+<tr>
+<td title='test2.TestC.testC3()'><b>testC3</b><br>Test class: test2.TestC</td>
+<td></td>
+<td>0</td>
+<td>test2.TestC@78ac1102</td></tr>
 </table><p>
 </body>
 </html>

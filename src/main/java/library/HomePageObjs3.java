@@ -1,12 +1,12 @@
 package library;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebDriver;
 
-import utilities.Base;
 
-public class HomePageObjs3 extends Base {
+
+public class HomePageObjs3  {
 	
 	
 	WebDriver driver;

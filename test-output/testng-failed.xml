@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="online_shopping.SearchTest2">
+      <class name="excelTest.ExcelDataPrint">
         <methods>
-          <include name="orderingGoods"/>
-          <include name="aftherClass"/>
-          <include name="beforeClass"/>
+          <include name="printExcelData"/>
+          <include name="setUpExcel"/>
         </methods>
-      </class> <!-- online_shopping.SearchTest2 -->
+      </class> <!-- excelTest.ExcelDataPrint -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,55 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-07T17:39:03 EDT" name="Command line suite" finished-at="2020-06-07T17:39:28 EDT" duration-ms="25141">
+  <suite started-at="2020-06-18T03:23:24 EDT" name="Command line suite" finished-at="2020-06-18T03:23:51 EDT" duration-ms="26891">
     <groups>
     </groups>
-    <test started-at="2020-06-07T17:39:03 EDT" name="Command line test" finished-at="2020-06-07T17:39:28 EDT" duration-ms="25141">
-      <class name="test2.TestB">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test2.TestB@2db7a79b]" started-at="2020-06-07T17:39:23 EDT" name="beforeClass" finished-at="2020-06-07T17:39:26 EDT" duration-ms="3045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="testB1()[pri:0, instance:test2.TestB@2db7a79b]" started-at="2020-06-07T17:39:26 EDT" name="testB1" finished-at="2020-06-07T17:39:28 EDT" duration-ms="1534" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test started-at="2020-06-18T03:23:24 EDT" name="Command line test" finished-at="2020-06-18T03:23:51 EDT" duration-ms="26891">
+      <class name="class24.AssertionTest">
+        <test-method signature="testSoftAssert()[pri:0, instance:class24.AssertionTest@289d1c02]" started-at="2020-06-18T03:23:24 EDT" name="testSoftAssert" finished-at="2020-06-18T03:23:24 EDT" duration-ms="9" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='travellerButton']"}
-  (Session info: chrome=83.0.4103.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-B73T7O77', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 21b92d63613181886f46968e7bb4e573
-*** Element info: {Using=xpath, value=//a[@id='travellerButton']}]]>
+              <![CDATA[The following asserts failed:
+Message for indication method = testSoftAssert() expected [Hello] but found [hell],
+5>3 example expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='travellerButton']"}
-  (Session info: chrome=83.0.4103.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-B73T7O77', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 21b92d63613181886f46968e7bb4e573
-*** Element info: {Using=xpath, value=//a[@id='travellerButton']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at test2.TestB.testB1(TestB.java:15)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Message for indication method = testSoftAssert() expected [Hello] but found [hell],
+5>3 example expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at class24.AssertionTest.testSoftAssert(AssertionTest.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,39 +61,63 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoftAssert -->
+      </class> <!-- class24.AssertionTest -->
+      <class name="test2.TestB">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test2.TestB@3891771e]" started-at="2020-06-18T03:23:46 EDT" name="beforeClass" finished-at="2020-06-18T03:23:49 EDT" duration-ms="3055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="testB1()[pri:0, instance:test2.TestB@3891771e]" started-at="2020-06-18T03:23:49 EDT" name="testB1" finished-at="2020-06-18T03:23:51 EDT" duration-ms="2235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testB1 -->
-        <test-method is-config="true" signature="aftherClass()[pri:0, instance:test2.TestB@2db7a79b]" started-at="2020-06-07T17:39:28 EDT" name="aftherClass" finished-at="2020-06-07T17:39:28 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftherClass()[pri:0, instance:test2.TestB@3891771e]" started-at="2020-06-18T03:23:51 EDT" name="aftherClass" finished-at="2020-06-18T03:23:51 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftherClass -->
       </class> <!-- test2.TestB -->
+      <class name="test2.TestC">
+        <test-method signature="testC()[pri:0, instance:test2.TestC@78ac1102]" started-at="2020-06-18T03:23:51 EDT" name="testC" finished-at="2020-06-18T03:23:51 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method signature="testC2()[pri:0, instance:test2.TestC@78ac1102]" started-at="2020-06-18T03:23:51 EDT" name="testC2" finished-at="2020-06-18T03:23:51 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC2 -->
+        <test-method signature="testC3()[pri:0, instance:test2.TestC@78ac1102]" started-at="2020-06-18T03:23:51 EDT" name="testC3" finished-at="2020-06-18T03:23:51 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC3 -->
+      </class> <!-- test2.TestC -->
       <class name="test.WikipediaTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.WikipediaTest@37374a5e]" started-at="2020-06-07T17:39:03 EDT" name="beforeClass" finished-at="2020-06-07T17:39:06 EDT" duration-ms="3681" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.WikipediaTest@22eeefeb]" started-at="2020-06-18T03:23:24 EDT" name="beforeClass" finished-at="2020-06-18T03:23:28 EDT" duration-ms="3827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="selectTest()[pri:0, instance:test.WikipediaTest@37374a5e]" started-at="2020-06-07T17:39:06 EDT" name="selectTest" finished-at="2020-06-07T17:39:12 EDT" duration-ms="5507" status="PASS">
+        <test-method signature="selectTest()[pri:0, instance:test.WikipediaTest@22eeefeb]" started-at="2020-06-18T03:23:28 EDT" name="selectTest" finished-at="2020-06-18T03:23:34 EDT" duration-ms="5938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectTest -->
-        <test-method is-config="true" signature="aftherClass()[pri:0, instance:test.WikipediaTest@37374a5e]" started-at="2020-06-07T17:39:12 EDT" name="aftherClass" finished-at="2020-06-07T17:39:12 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftherClass()[pri:0, instance:test.WikipediaTest@22eeefeb]" started-at="2020-06-18T03:23:34 EDT" name="aftherClass" finished-at="2020-06-18T03:23:34 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftherClass -->
       </class> <!-- test.WikipediaTest -->
       <class name="test2.TestA">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test2.TestA@4671e53b]" started-at="2020-06-07T17:39:12 EDT" name="beforeClass" finished-at="2020-06-07T17:39:15 EDT" duration-ms="3038" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test2.TestA@17d0685f]" started-at="2020-06-18T03:23:34 EDT" name="beforeClass" finished-at="2020-06-18T03:23:37 EDT" duration-ms="3110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="selectGoods()[pri:0, instance:test2.TestA@4671e53b]" started-at="2020-06-07T17:39:15 EDT" name="selectGoods" finished-at="2020-06-07T17:39:23 EDT" duration-ms="8305" status="PASS">
+        <test-method signature="selectGoods()[pri:0, instance:test2.TestA@17d0685f]" started-at="2020-06-18T03:23:37 EDT" name="selectGoods" finished-at="2020-06-18T03:23:46 EDT" duration-ms="8652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectGoods -->
-        <test-method is-config="true" signature="aftherClass()[pri:0, instance:test2.TestA@4671e53b]" started-at="2020-06-07T17:39:23 EDT" name="aftherClass" finished-at="2020-06-07T17:39:23 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="aftherClass()[pri:0, instance:test2.TestA@17d0685f]" started-at="2020-06-18T03:23:46 EDT" name="aftherClass" finished-at="2020-06-18T03:23:46 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftherClass -->

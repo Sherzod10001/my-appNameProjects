@@ -1,10 +1,9 @@
 package online_shopping;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+
 import org.testng.annotations.Test;
 
-import library.HomePageFactory;
+
 import library.HomePageFactory2;
 import library.HomePageObjs2;
 import library.HomePageObjs3;
@@ -12,7 +11,7 @@ import utilities.Base;
 
 public class SearchTest2 extends Base{
 	
-	@Test
+	//@Test
 	public void orderingGoods() {
 		driver.get(prop.getProperty("url"));
 

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
-      <class name="test2.TestB">
+      <class name="class24.AssertionTest">
         <methods>
-          <include name="aftherClass"/>
-          <include name="testB1"/>
-          <include name="beforeClass"/>
+          <include name="testSoftAssert"/>
         </methods>
-      </class> <!-- test2.TestB -->
+      </class> <!-- class24.AssertionTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

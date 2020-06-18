@@ -9,33 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,141</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">26,891</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test2.TestB</td><td><a href="#m0">testB1</a></td><td rowspan="1">1591565966900</td><td rowspan="1">1534</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.WikipediaTest</td><td><a href="#m1">selectTest</a></td><td rowspan="1">1591565946997</td><td rowspan="1">5507</td></tr><tr class="passedodd"><td rowspan="1">test2.TestA</td><td><a href="#m2">selectGoods</a></td><td rowspan="1">1591565955548</td><td rowspan="1">8305</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">class24.AssertionTest</td><td><a href="#m0">testSoftAssert</a></td><td rowspan="1">1592465004883</td><td rowspan="1">9</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.WikipediaTest</td><td><a href="#m1">selectTest</a></td><td rowspan="1">1592465008729</td><td rowspan="1">5938</td></tr><tr class="passedodd"><td rowspan="1">test2.TestA</td><td><a href="#m2">selectGoods</a></td><td rowspan="1">1592465017781</td><td rowspan="1">8652</td></tr><tr class="passedeven"><td rowspan="1">test2.TestB</td><td><a href="#m3">testB1</a></td><td rowspan="1">1592465029489</td><td rowspan="1">2235</td></tr><tr class="passedodd"><td rowspan="3">test2.TestC</td><td><a href="#m4">testC</a></td><td rowspan="1">1592465031729</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m5">testC2</a></td><td rowspan="1">1592465031730</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m6">testC3</a></td><td rowspan="1">1592465031731</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">test2.TestB#testB1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@id=&apos;travellerButton&apos;]&quot;}
-  (Session info: chrome=83.0.4103.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-B73T7O77&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56262}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 21b92d63613181886f46968e7bb4e573
-*** Element info: {Using=xpath, value=//a[@id=&apos;travellerButton&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at test2.TestB.testB1(TestB.java:15)
+<h2>Command line test</h2><h3 id="m0">class24.AssertionTest#testSoftAssert</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Message for indication method = testSoftAssert() expected [Hello] but found [hell],
+	5&gt;3 example expected [false] but found [true]
+	at class24.AssertionTest.testSoftAssert(AssertionTest.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">test.WikipediaTest#selectTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">test2.TestA#selectGoods</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test2.TestB#testB1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test2.TestC#testC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test2.TestC#testC2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test2.TestC#testC3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
